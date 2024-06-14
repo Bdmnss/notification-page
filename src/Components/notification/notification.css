@@ -1,0 +1,89 @@
+.notification-div {
+  display: flex;
+  flex-direction: column;
+  width: 67rem;
+  padding: 1.8rem 3.2rem 1.7rem 2rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.notification-div-without-text {
+  display: flex;
+}
+
+.user-description-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.notification-with-user-picture {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #f65552;
+  margin-left: 0.4rem;
+}
+
+.profilePic {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.9rem;
+}
+
+.username {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1c202b;
+  margin-right: 0.6rem;
+}
+
+.action {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.post {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #5e6778;
+  margin-left: 0.6rem;
+}
+
+.groupName {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0a327b;
+  margin-left: 0.6rem;
+}
+
+.time {
+  font-size: 1.6rem;
+  color: #939cad;
+  font-weight: 500;
+}
+
+.userPicture {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.text {
+  width: 90%;
+  padding: 1.7rem 2rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+  border: solid 1px #dde7ee;
+  border-radius: 0.5rem;
+  margin-top: 1.3rem;
+  align-self: flex-end;
+}

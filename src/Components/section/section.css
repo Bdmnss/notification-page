@@ -1,0 +1,39 @@
+.section-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.1rem;
+}
+
+.section-div p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5e6778;
+  cursor: pointer;
+}
+
+.notifications-div {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.notifications-div h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1c202b;
+}
+
+.notifications-div div {
+  width: 3.2rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  background-color: #0a327b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
