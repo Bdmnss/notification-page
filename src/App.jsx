@@ -5,13 +5,27 @@ import data from "./data.json";
 function App() {
   const [notifications, setNotifications] = useState(data);
 
+  const counter = notifications.filter(
+    (notification) => !notification.isRead
+  ).length;
+
+  const read = (id) => {
+    const updatedNotifications = notifications.map((notification) => {
+      if (notification.id === id) {
+        return { ...notification, isRead: true };
+      }
+      return notification;
+    });
+    setNotifications(updatedNotifications);
+  };
+
   return (
     <div className="app-div">
       <section>
         <div className="section-div">
           <div className="notifications-div">
             <h2>Notifications</h2>
-            <div>3</div>
+            <div>{counter}</div>
           </div>
           <p>Mark all as read</p>
         </div>
@@ -22,6 +36,7 @@ function App() {
           <div
             className="notification-div"
             style={!notification.isRead ? { backgroundColor: "#f7fafd" } : null}
+            onClick={() => read(notification.id)}
           >
             <div className="notification-div-without-text">
               <img className="profilePic" src={notification.profilePic} />
