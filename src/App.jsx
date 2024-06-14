@@ -19,6 +19,13 @@ function App() {
     setNotifications(updatedNotifications);
   };
 
+  const markAllAsRead = () => {
+    const updatedNotifications = notifications.map((notification) => {
+      return { ...notification, isRead: true };
+    });
+    setNotifications(updatedNotifications);
+  };
+
   return (
     <div className="app-div">
       <section>
@@ -27,7 +34,7 @@ function App() {
             <h2>Notifications</h2>
             <div>{counter}</div>
           </div>
-          <p>Mark all as read</p>
+          <p onClick={markAllAsRead}>Mark all as read</p>
         </div>
       </section>
 
