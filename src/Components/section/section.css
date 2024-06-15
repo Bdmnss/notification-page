@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.section-div p:hover {
+  color: #0a327b;
+}
+
 .notifications-div {
   display: flex;
   align-items: center;

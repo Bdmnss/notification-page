@@ -45,6 +45,10 @@
   margin-right: 0.6rem;
 }
 
+.username:hover {
+  color: #0a327b;
+}
+
 .action {
   font-size: 1.6rem;
   font-weight: 500;
@@ -56,6 +60,10 @@
   font-weight: 800;
   color: #5e6778;
   margin-left: 0.6rem;
+}
+
+.post:hover {
+  color: #0a327b;
 }
 
 .groupName {
@@ -86,4 +94,8 @@
   border-radius: 0.5rem;
   margin-top: 1.3rem;
   align-self: flex-end;
+}
+
+.text:hover {
+  background-color: #e5effa;
 }

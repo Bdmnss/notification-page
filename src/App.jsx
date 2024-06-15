@@ -17,6 +17,7 @@ function App() {
       <main>
         {notifications.map((notification) => (
           <Notification
+            key={notification.id}
             notification={notification}
             notifications={notifications}
             setNotifications={setNotifications}
