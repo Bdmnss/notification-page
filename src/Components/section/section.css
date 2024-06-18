@@ -41,3 +41,17 @@
   font-size: 1.6rem;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 600px) {
+  .section-div {
+    margin-bottom: 2.4rem;
+  }
+
+  .section-div p {
+    font-size: 1.4rem;
+  }
+
+  .notifications-div h2 {
+    font-size: 2rem;
+  }
+}

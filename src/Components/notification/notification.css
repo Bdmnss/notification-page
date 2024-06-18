@@ -1,7 +1,8 @@
 .notification-div {
   display: flex;
   flex-direction: column;
-  width: 67rem;
+  width: 100%;
+  max-width: 68rem;
   padding: 1.8rem 3.2rem 1.7rem 2rem;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
@@ -42,7 +43,7 @@
   font-size: 1.6rem;
   font-weight: 800;
   color: #1c202b;
-  margin-right: 0.6rem;
+  margin-right: 0.4rem;
 }
 
 .username:hover {
@@ -59,7 +60,7 @@
   font-size: 1.6rem;
   font-weight: 800;
   color: #5e6778;
-  margin-left: 0.6rem;
+  margin-left: 0.4rem;
 }
 
 .post:hover {
@@ -98,4 +99,31 @@
 
 .text:hover {
   background-color: #e5effa;
+}
+
+@media only screen and (max-width: 600px) {
+  .notification-div {
+    width: 100%;
+    padding: 16px 26px 16px 16px;
+    max-width: 60rem;
+  }
+
+  .profilePic {
+    width: 3.9rem;
+    height: 3.9rem;
+    margin-right: 1.3rem;
+  }
+
+  .userPicture {
+    width: 3.9rem;
+    height: 3.9rem;
+  }
+
+  .username,
+  .action,
+  .post,
+  .groupName,
+  .time {
+    font-size: 1.4rem;
+  }
 }

@@ -1,6 +1,14 @@
 .app-div {
-  width: 73rem;
+  width: 100%;
+  max-width: 73rem;
   background-color: #ffffff;
   padding: 3.3rem 2.7rem 0 3rem;
   border-radius: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-div {
+    width: 100%;
+    padding: 24px 16px 29px;
+  }
 }

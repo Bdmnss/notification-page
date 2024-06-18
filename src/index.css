@@ -18,3 +18,11 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #f7fafd;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+    min-height: 0;
+    background-color: white;
+  }
+}
